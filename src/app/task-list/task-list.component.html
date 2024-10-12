@@ -1,0 +1,12 @@
+<div class="slds-box">
+    <h2>Task List</h2>
+    <ul *ngIf="tasks.length > 0">
+      <li *ngFor="let task of tasks">
+        <span>{{ task.title }}</span>
+        <button (click)="editTask(task)">Edit</button>
+        <button (click)="deleteTask(task.id)">Delete</button>
+      </li>
+    </ul>
+    <p *ngIf="tasks.length === 0">No tasks available. Add a task!</p>
+  </div>
+  

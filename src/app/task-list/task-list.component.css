@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  

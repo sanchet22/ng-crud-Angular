@@ -1,0 +1,17 @@
+<div class="slds-box">
+    <h2>{{ isEditMode ? 'Edit Task' : 'Add New Task' }}</h2>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+      <div class="slds-form-element">
+        <label for="title" class="slds-form-element__label">Task Title</label>
+        <input type="text" id="title" formControlName="title" class="slds-input" />
+      </div>
+      <div class="slds-form-element">
+        <label for="description" class="slds-form-element__label">Description</label>
+        <textarea id="description" formControlName="description" class="slds-textarea"></textarea>
+      </div>
+      <button type="submit" class="slds-button slds-button_brand">
+        {{ isEditMode ? 'Update Task' : 'Add Task' }}
+      </button>
+    </form>
+  </div>
+  
